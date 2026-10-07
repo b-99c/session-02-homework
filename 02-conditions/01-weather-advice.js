@@ -13,3 +13,17 @@
 //   43°C: Stay inside, it's very hot!
 
 // your code here
+const temperature = 43;
+let advice;
+
+if (temperature >= 40) {
+  advice = "Stay inside, it's very hot!";
+} else if (temperature >= 30) {
+  advice = "Hot, drink lots of water.";
+} else if (temperature >= 20) {
+  advice = "Nice weather, go outside.";
+} else {
+  advice = "Cool, take a jacket.";
+}
+
+console.log(`${temperature}°C: ${advice}`);
