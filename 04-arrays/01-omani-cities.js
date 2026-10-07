@@ -19,3 +19,10 @@
 const cities = ["Muscat", "Salalah", "Sohar", "Nizwa", "Sur"];
 
 // your code here
+console.log(`Number of cities: ${cities.length}`);
+console.log(`First: ${cities[0]}`);
+console.log(`Last: ${cities[cities.length - 1]}`);
+
+for (let index = 0; index < cities.length; index++) {
+  console.log(`${index + 1}. ${cities[index]}`);
+}
