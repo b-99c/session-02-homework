@@ -11,3 +11,14 @@
 //   Digit sum of 2026 = 10
 
 // your code here
+const originalNumber = 2026;
+let number = originalNumber;
+let sum = 0;
+
+while (number > 0) {
+  const digit = number % 10;
+  sum += digit;
+  number = Math.floor(number / 10);
+}
+
+console.log(`Digit sum of ${originalNumber} = ${sum}`);
